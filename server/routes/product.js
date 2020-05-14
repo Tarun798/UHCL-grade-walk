@@ -5,6 +5,10 @@ const multer = require('multer');
 
 const { auth } = require("../middleware/auth");
 
+// const upload = multer({dest : 'uploads/'});
+var upload = multer({ storage: storage }).single("file")
+
+
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, 'uploads/')
@@ -21,14 +25,13 @@ var storage = multer.diskStorage({
     }
 })
 
-var upload = multer({ storage: storage }).single("file")
 
 
 //=================================
 //             Product
 //=================================
 
-router.post("/uploadImage", auth, (req, res) => {
+router.post("/uploadImage", auth ,  (req, res) => {
 
     upload(req, res, err => {
         if (err) {
@@ -105,8 +108,7 @@ router.post("/getProducts", (req, res) => {
 });
 
 
-//?id=${productId}&type=single
-//id=12121212,121212,1212121   type=array 
+
 router.get("/products_by_id", (req, res) => {
     let type = req.query.type
     let productIds = req.query.id

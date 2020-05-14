@@ -20,13 +20,13 @@ function UserCardBlock(props) {
                 {/*<p className="uniname">University of Houston {" "} <img style={{maxWidth :'20px'}} className="symbolimg" src="https://i.ya-webdesign.com/images/uhcl-hawk-png-18.png"/> {" "} Clear Lake </p>*/}
                 <h2 className="uniname">
                     University of Houston  {" "}
-                    <img  style={{maxHeight : '15px'}}
-                         src="https://i.ya-webdesign.com/images/uhcl-hawk-png-18.png"
-                         alt="avatar_img"
-                    />{" "}
+                    {" "}
                     Clear Lake
                 </h2>
                 <img className="circle-imgggg" alt="product"  src={renderCartImage(product.images)} />
+                <img className="circle-img" alt="product"      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-2GNgmG_ZT_FeLoRxGapoqTDlvm9OuL45RWGJOS-iYeVzXjal&usqp=CAU"
+                />
+
             </div>
 
             <div className="bottomm">
