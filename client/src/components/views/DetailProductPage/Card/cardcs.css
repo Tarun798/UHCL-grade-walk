@@ -1,0 +1,79 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+
+
+.heading {
+    text-align: center;
+    font-size: 2em;
+    color: #2d3436;
+    margin: 20px 0 30px;
+}
+.symbolimg {
+    max-width: 3%;
+    max-height: 39%;
+}
+
+.toper {
+    border-radius: 25px;
+    position: relative;
+    padding: 25px 15px;
+    background-color: rgb(41, 172, 224);
+    margin: 50px 0;
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 2px 5px #ccc;
+    text-align: left;
+}
+
+.topp {
+    border-radius: 25px 25px 0 0;
+    height: 100px;
+    width: 100%;
+    background-color: lightgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.name {
+    font-size: 1em;
+    color: #2d3436;
+    display: flex;
+    flex: 1;
+    margin: 1% 20px 0;
+}
+
+.toper img {
+    margin: 30px 20px 0 0;
+}
+
+.circle-imgggg {
+    border-radius: 50%;
+    border: 7px solid #fff;
+    width: 120px;
+    height: 120px;
+}
+
+.bottomm {
+    margin-top: 140px;
+}
+
+.infoo {
+    margin: 20px 0;
+    color: black;
+}
+
+.info_name {
+    margin: 0px 0;
+    color: black;
+}
+
+.uniname{
+    font-size: 1.5em;
+    color:black;
+    /* margin: 1% 20px 0; */
+    padding-top: 1%;
+    padding-left: 3%;
+}
